@@ -1,0 +1,273 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background-color: #F8F6FC;
+  font-family: "Avenir Next", "Nunito Sans", sans-serif;
+}
+
+.processing {
+  background-color: #0A2F49;
+}
+
+.processing .payment-header {
+  padding-bottom: 56px;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.payment-header {
+  max-width: 700px;
+  padding-bottom: 32px;
+}
+
+i {
+  border: solid #2D5570;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.step-title {
+  color: #2D5570;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+.shadow-card {
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.08);
+}
+
+@media (min-width:320px) {
+  .card-deck .card {
+    min-width: 280px;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 6px;
+}
+
+.processing .card-header {
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+}
+
+.card-header {
+  padding: 1.75rem 1.25rem;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.card-header:first-child {
+  border-radius: 7px;
+}
+
+.bank-logo {
+  height: 64px;
+  width: 111px;
+}
+
+.bank-logo-sm {
+  height: 48px;
+  width: 82px;
+}
+
+.bank-logo img {
+  max-width: 111px;
+}
+
+.bank-logo-sm img {
+  max-width: 82px;
+}
+
+.card-body {
+  padding: 0.25rem 1.75rem 2.75rem;
+}
+
+.card-amount .card-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.processing-amount {
+  color: #2D5570;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+}
+
+.checkout-amount {
+  color: #2D5570;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: center;
+}
+
+.card-subtext-sm {
+  color: #73757C;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5rem;
+  text-align: center;
+  margin: 0 2rem 0.75rem;
+}
+
+.blue-subtext {
+  color: #2D5570;
+  font-size: 1rem;
+  line-height: 24px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.validation-text {
+  margin-bottom: 36px;
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+}
+
+.form-control {
+  height: 48px;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border: 1px solid #E5EBEE;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999;
+  opacity: 1;
+  font-style: italic;
+}
+
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+  font-style: italic;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999;
+  opacity: 1;
+  font-style: italic;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #999;
+  opacity: 1;
+  font-style: italic;
+}
+
+input.form-control::placeholder {
+  color: #999;
+  opacity: 1;
+  font-style: italic;
+}
+
+::placeholder {
+  color: #999;
+  opacity: 1;
+  font-style: italic;
+}
+
+.amounts-list {
+  margin-top: 0;
+  margin-bottom: 2.75rem;
+}
+
+.amounts-list li {
+  color: #506C78;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.card-amount ul.amounts-list {
+  margin-bottom: 6px;
+}
+
+.card-amount .amounts-list li {
+  margin-bottom: 30px;
+}
+
+.card-amount .btn-lg {
+  font-size: 1.3rem;
+}
+
+.btn-lg {
+  padding: 1.2rem 1rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  border-radius: 2rem;
+  min-width: 120px;
+}
+
+@media (min-width: 360px) {
+  .btn-lg {
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 330px) {
+  .btn-lg {
+    min-width: 110px;
+  }
+}
+
+.btn-primary {
+  background-color: #518BB3;
+  border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):hover  {
+  background-color: #2D5570;
+}
+
+.mb-5 {
+  margin-bottom: 2rem !important;
+}
+
+.company-signature {
+  color: #A8A8A8;
+  letter-spacing: 0.5px;
+}
+
+.company-name {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.company-address {
+  font-size: 0.7rem;
+}
