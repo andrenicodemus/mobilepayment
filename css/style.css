@@ -12,6 +12,10 @@ body {
   font-family: "Avenir Next", "Nunito Sans", sans-serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .processing {
   background-color: #0A2F49;
 }
