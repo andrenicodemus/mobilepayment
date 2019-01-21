@@ -283,8 +283,8 @@ input.form-control::placeholder {
   display: inline-block;
   vertical-align: top;
   border-radius: 50%;
-  width: 5.25em;
-  height: 5.25em;
+  width: 5em;
+  height: 5em;
 }
 
 .load-complete {
@@ -311,8 +311,8 @@ input.form-control::placeholder {
   border-right: 4px solid #5cb85c;
   border-top: 4px solid #5cb85c;
   content: '';
-  left: 1.15em;
-  top: 2.9em;
+  left: 1em;
+  top: 2.75em;
   position: absolute;
 }
 
@@ -344,5 +344,57 @@ input.form-control::placeholder {
     height: 3em;
     width: 1.25em;
     opacity: 1;
+  }
+}
+
+
+.processing-status-container {
+    height: 1.5rem;
+    overflow: hidden;
+}
+
+.processing-successful {
+  top: 40px;
+}
+
+.processing-done {
+  animation: processing-done 400ms ease-in;
+  margin-top: -20px;
+}
+
+.processing-successful-done {
+  animation: processing-successful-done 600ms ease-in;
+  margin-top: -1.5rem;
+}
+
+.fade-out {
+  animation: fade-out 400ms linear;
+  opacity: 0;
+}
+
+@keyframes processing-done {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -20px;
+  }
+}
+
+@keyframes processing-successful-done {
+  0% {
+    margin-top: 40px;
+  }
+  100% {
+    margin-top: -1.5rem;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
