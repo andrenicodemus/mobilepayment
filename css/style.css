@@ -258,6 +258,10 @@ input.form-control::placeholder {
   background-color: #2D5570;
 }
 
+.btn-retry {
+  display: none;
+}
+
 .mb-5 {
   margin-bottom: 2rem !important;
 }
@@ -298,15 +302,50 @@ input.form-control::placeholder {
   transition: border 500ms ease-out;
 }
 
-.checkmark {
+.circle-loader-error {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-left-color: #5cb85c;
+  animation: loader-spin 1.2s infinite linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.load-complete-error {
+  -webkit-animation: none;
+  animation: none;
+  border-color: #EF2121;
+  transition: border 500ms ease-out;
+}
+
+.checkmark, .error-x {
   display: none;
 }
+
 .checkmark.draw:after {
   animation-duration: 800ms;
   animation-timing-function: ease;
   animation-name: checkmark;
   transform: scaleX(-1) rotate(135deg);
 }
+
+.error-x.draw:before {
+  animation-duration: 400ms;
+  animation-timing-function: ease;
+  animation-name: error-x-1;
+  transform: skew(40deg);
+}
+
+.error-x.draw:after {
+  animation-duration: 400ms;
+  animation-timing-function: ease;
+  animation-name: error-x-2;
+  transform: skew(-40deg);
+}
+
 .checkmark:after {
   opacity: 1;
   height: 3em;
@@ -318,6 +357,23 @@ input.form-control::placeholder {
   left: 1em;
   top: 2.75em;
   position: absolute;
+}
+
+.error-x:before, .error-x:after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 42px;
+  left: 36px;
+  top: 18px;
+  background: #EF2121;
+}
+
+.error-x:before{
+  transform: skew(40deg)
+}
+.error-x:after{
+  transform: skew(-40deg);
 }
 
 @keyframes loader-spin {
@@ -351,9 +407,27 @@ input.form-control::placeholder {
   }
 }
 
+@keyframes error-x-1 {
+  0% {
+    transform: skew(0deg)
+  }
+  100% {
+    transform: skew(40deg)
+  }
+}
+
+@keyframes error-x-2 {
+  0% {
+    transform: skew(0deg)
+  }
+  100% {
+    transform: skew(-40deg)
+  }
+}
+
 
 .processing-status-container {
-    height: 1.5rem;
+    height: 2.5rem;
     overflow: hidden;
 }
 
@@ -384,6 +458,7 @@ input.form-control::placeholder {
     margin-top: -20px;
   }
 }
+
 
 @keyframes processing-successful-done {
   0% {
