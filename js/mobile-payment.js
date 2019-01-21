@@ -5,5 +5,5 @@ jQuery(document).ready(function($) {
     $('.processing-in-progress').addClass('processing-done');
     $('.processing-successful').addClass('processing-successful-done');
     $('.processing-text').addClass('fade-out');
-  }, 5000);
+  }, 3000);
 });

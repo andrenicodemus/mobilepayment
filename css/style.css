@@ -363,7 +363,7 @@ input.form-control::placeholder {
 }
 
 .processing-successful-done {
-  animation: processing-successful-done 600ms ease-in;
+  animation: processing-successful-done 800ms ease-in;
   margin-top: -1.5rem;
 }
 
@@ -383,10 +383,10 @@ input.form-control::placeholder {
 
 @keyframes processing-successful-done {
   0% {
-    margin-top: 40px;
+    margin-top: 50px;
   }
   100% {
-    margin-top: -1.5rem;
+    margin-top: -20px;
   }
 }
 
