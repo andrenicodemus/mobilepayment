@@ -1,6 +1,18 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
 html {
   font-size: 14px;
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -57,10 +69,10 @@ i {
 }
 
 .shadow-card {
-  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.08);
 }
 
-@media (min-width:320px) {
+@media (min-width: 320px) {
   .card-deck .card {
     min-width: 280px;
     max-width: 600px;
@@ -254,7 +266,7 @@ input.form-control::placeholder {
   border: none;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):hover  {
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):hover {
   background-color: #2D5570;
 }
 
@@ -271,6 +283,11 @@ input.form-control::placeholder {
   letter-spacing: 0.5px;
 }
 
+.company-signature img {
+  display: block;
+  margin: 0 auto;
+}
+
 .company-name {
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -279,7 +296,6 @@ input.form-control::placeholder {
 .company-address {
   font-size: 0.7rem;
 }
-
 
 /* Processing */
 
@@ -369,10 +385,11 @@ input.form-control::placeholder {
   background: #EF2121;
 }
 
-.error-x:before{
+.error-x:before {
   transform: skew(40deg)
 }
-.error-x:after{
+
+.error-x:after {
   transform: skew(-40deg);
 }
 
@@ -384,6 +401,7 @@ input.form-control::placeholder {
     transform: rotate(360deg);
   }
 }
+
 @keyframes checkmark {
   0% {
     height: 0;
@@ -425,10 +443,9 @@ input.form-control::placeholder {
   }
 }
 
-
 .processing-status-container {
-    height: 2.5rem;
-    overflow: hidden;
+  height: 2.5rem;
+  overflow: hidden;
 }
 
 .processing-successful {
@@ -458,7 +475,6 @@ input.form-control::placeholder {
     margin-top: -20px;
   }
 }
-
 
 @keyframes processing-successful-done {
   0% {
