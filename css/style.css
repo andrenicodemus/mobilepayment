@@ -270,10 +270,6 @@ input.form-control::placeholder {
   background-color: #2D5570;
 }
 
-.btn-retry {
-  display: none;
-}
-
 .mb-5 {
   margin-bottom: 2rem !important;
 }
@@ -318,27 +314,11 @@ input.form-control::placeholder {
   transition: border 500ms ease-out;
 }
 
-.circle-loader-error {
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-left-color: #5cb85c;
-  animation: loader-spin 1.2s infinite linear;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  border-radius: 50%;
-  width: 5em;
-  height: 5em;
-}
-
 .load-complete-error {
   -webkit-animation: none;
   animation: none;
   border-color: #EF2121;
   transition: border 500ms ease-out;
-}
-
-.checkmark, .error-x {
-  display: none;
 }
 
 .checkmark.draw:after {

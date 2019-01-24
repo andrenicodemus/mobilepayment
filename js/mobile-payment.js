@@ -1,4 +1,8 @@
 jQuery(document).ready(function($) {
+  $('.checkmark').hide();
+  $('.error-x').hide();
+  $('.btn-retry').hide();
+
   setTimeout(function() {
     $('.circle-loader').toggleClass('load-complete');
     $('.checkmark').toggle();
