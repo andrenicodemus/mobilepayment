@@ -102,20 +102,14 @@ i {
 
 .bank-logo {
   height: 64px;
-  width: 111px;
 }
 
 .bank-logo-sm {
   height: 48px;
-  width: 82px;
 }
 
-.bank-logo img {
-  max-width: 111px;
-}
-
-.bank-logo-sm img {
-  max-width: 82px;
+.bank-logo img, .bank-logo-sm img {
+  height: 2em;
 }
 
 .card-body {
@@ -358,10 +352,10 @@ input.form-control::placeholder {
 .error-x:before, .error-x:after {
   content: '';
   position: absolute;
-  width: 5px;
-  height: 42px;
-  left: 36px;
-  top: 18px;
+  width: 0.3em;
+  height: 3em;
+  left: 2.25em;
+  top: 0.9em;
   background: #EF2121;
 }
 
@@ -424,7 +418,7 @@ input.form-control::placeholder {
 }
 
 .processing-status-container {
-  height: 2.5rem;
+  height: 3.8rem;
   overflow: hidden;
 }
 
