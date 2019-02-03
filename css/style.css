@@ -1,6 +1,18 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
 html {
   font-size: 14px;
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -57,10 +69,10 @@ i {
 }
 
 .shadow-card {
-  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.08);
 }
 
-@media (min-width:320px) {
+@media (min-width: 320px) {
   .card-deck .card {
     min-width: 280px;
     max-width: 600px;
@@ -90,20 +102,14 @@ i {
 
 .bank-logo {
   height: 64px;
-  width: 111px;
 }
 
 .bank-logo-sm {
   height: 48px;
-  width: 82px;
 }
 
-.bank-logo img {
-  max-width: 111px;
-}
-
-.bank-logo-sm img {
-  max-width: 82px;
+.bank-logo img, .bank-logo-sm img {
+  height: 2em;
 }
 
 .card-body {
@@ -254,12 +260,8 @@ input.form-control::placeholder {
   border: none;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):hover  {
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):hover {
   background-color: #2D5570;
-}
-
-.btn-retry {
-  display: none;
 }
 
 .mb-5 {
@@ -271,6 +273,11 @@ input.form-control::placeholder {
   letter-spacing: 0.5px;
 }
 
+.company-signature img {
+  display: block;
+  margin: 0 auto;
+}
+
 .company-name {
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -279,7 +286,6 @@ input.form-control::placeholder {
 .company-address {
   font-size: 0.7rem;
 }
-
 
 /* Processing */
 
@@ -302,27 +308,11 @@ input.form-control::placeholder {
   transition: border 500ms ease-out;
 }
 
-.circle-loader-error {
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-left-color: #5cb85c;
-  animation: loader-spin 1.2s infinite linear;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  border-radius: 50%;
-  width: 5em;
-  height: 5em;
-}
-
 .load-complete-error {
   -webkit-animation: none;
   animation: none;
   border-color: #EF2121;
   transition: border 500ms ease-out;
-}
-
-.checkmark, .error-x {
-  display: none;
 }
 
 .checkmark.draw:after {
@@ -362,17 +352,18 @@ input.form-control::placeholder {
 .error-x:before, .error-x:after {
   content: '';
   position: absolute;
-  width: 5px;
-  height: 42px;
-  left: 36px;
-  top: 18px;
+  width: 0.3em;
+  height: 3em;
+  left: 2.25em;
+  top: 0.9em;
   background: #EF2121;
 }
 
-.error-x:before{
+.error-x:before {
   transform: skew(40deg)
 }
-.error-x:after{
+
+.error-x:after {
   transform: skew(-40deg);
 }
 
@@ -384,6 +375,7 @@ input.form-control::placeholder {
     transform: rotate(360deg);
   }
 }
+
 @keyframes checkmark {
   0% {
     height: 0;
@@ -425,10 +417,9 @@ input.form-control::placeholder {
   }
 }
 
-
 .processing-status-container {
-    height: 2.5rem;
-    overflow: hidden;
+  height: 3.8rem;
+  overflow: hidden;
 }
 
 .processing-successful {
@@ -458,7 +449,6 @@ input.form-control::placeholder {
     margin-top: -20px;
   }
 }
-
 
 @keyframes processing-successful-done {
   0% {
