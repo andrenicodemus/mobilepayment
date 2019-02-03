@@ -108,8 +108,12 @@ i {
   height: 48px;
 }
 
-.bank-logo img, .bank-logo-sm img {
-  height: 2em;
+.bank-logo img {
+  max-width: 111px;
+}
+
+.bank-logo-sm img {
+  max-width: 82px;
 }
 
 .card-body {
