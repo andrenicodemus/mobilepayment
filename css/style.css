@@ -501,9 +501,10 @@ button.btn.dropdown-toggle.selectpicker.btn-default {
 }
 
 .dropdown-toggle::after {
-  vertical-align: .65em;
   margin-left: .2rem;
   color: #2D5570;
+  position: absolute;
+  top: 8px;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li {
