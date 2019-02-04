@@ -12,12 +12,13 @@ jQuery(document).ready(function($) {
     $('.checkmark').toggle();
     $('.error-x').toggle();
     $('.btn-retry').toggle();
-    $('.processing-in-progress').addClass('processing-done');
     $('.processing-successful').addClass('processing-done');
-    $('#amount-error').hide();
-    $('.processing-text-error').attr('style','opacity:0');
+    $('.post-error-message').removeClass('hidden');
+    $('.sliding-canvas').addClass('slide-away');
+    $('.processing-text-error').attr('style','display:none');
+    $('.processing-amount').addClass('fade-out');
     $('.processing-text').addClass('fade-out');
     $('.circle-loader-error').toggleClass('load-complete-error');
-  }, 3000);
+  }, 2000);
 
 });

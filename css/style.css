@@ -422,17 +422,23 @@ input.form-control::placeholder {
 }
 
 .processing-status-container {
-  height: 3.8rem;
+  height: 4.8rem;
   overflow: hidden;
 }
 
 .processing-successful {
-  top: 40px;
+  top: 20px;
+  position: relative;
 }
 
 .processing-done {
   animation: processing-done 400ms ease-in;
-  margin-top: -20px;
+  margin-top: -10px;
+}
+
+.slide-away {
+  transition: all 800ms ease-in-out;
+  margin-top: -80px;
 }
 
 .processing-successful-done {
@@ -443,6 +449,10 @@ input.form-control::placeholder {
 .fade-out {
   animation: fade-out 400ms linear;
   opacity: 0;
+}
+
+.hidden {
+  display:none;
 }
 
 @keyframes processing-done {
