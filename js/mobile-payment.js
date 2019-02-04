@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
   $('.checkmark').hide();
   $('.error-x').hide();
   $('.btn-retry').hide();
-  $('.selectpicker').selectpicker('val', 'English', 'mobile');
+  $('.selectpicker').selectpicker('mobile');
 
   setTimeout(function() {
     $('.circle-loader').toggleClass('load-complete');
