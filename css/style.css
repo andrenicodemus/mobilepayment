@@ -471,3 +471,56 @@ input.form-control::placeholder {
     opacity: 0;
   }
 }
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  min-width: 120px;
+  width: 180px;
+  position: absolute;
+  right: 10px;
+  margin-top: -2px;
+}
+
+.dropdown-menu.open.show {
+  padding: .85em;
+}
+
+.bootstrap-select.btn-group.show .dropdown-menu.inner {
+  display: block;
+}
+
+button.btn.dropdown-toggle.selectpicker.btn-default {
+  background-color: rgba(0,0,0,0);
+  padding-bottom: 0;
+  padding-top: 0;
+  border: none;
+}
+
+.bootstrap-select.btn-group .btn .filter-option {
+  text-align: right;
+  padding-right: .4rem;
+}
+
+.dropdown-toggle::after {
+  vertical-align: .65em;
+  margin-left: .2rem;
+  color: #2D5570;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li {
+  margin: .2rem 0 .2rem 0;
+  padding: .4rem 1rem;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li:hover {
+  background-color: rgba(81,139,179,0.1);
+}
+
+.bootstrap-select.btn-group span, .bootstrap-select.btn-group .dropdown-menu li a {
+  color: #2D5570;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a:focus {
+  outline: none
+}

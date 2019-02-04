@@ -2,6 +2,7 @@ jQuery(document).ready(function($) {
   $('.checkmark').hide();
   $('.error-x').hide();
   $('.btn-retry').hide();
+  $('.selectpicker').selectpicker('val', 'English', 'mobile');
 
   setTimeout(function() {
     $('.circle-loader').toggleClass('load-complete');
@@ -15,4 +16,5 @@ jQuery(document).ready(function($) {
     $('.processing-text').addClass('fade-out');
     $('.circle-loader-error').toggleClass('load-complete-error');
   }, 3000);
+
 });
