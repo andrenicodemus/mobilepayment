@@ -2,7 +2,10 @@ jQuery(document).ready(function($) {
   $('.checkmark').hide();
   $('.error-x').hide();
   $('.btn-retry').hide();
-  $('.selectpicker').selectpicker('mobile');
+  $('.selectpicker').selectpicker();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    $('.selectpicker').selectpicker('mobile');
+  }
 
   setTimeout(function() {
     $('.circle-loader').toggleClass('load-complete');
